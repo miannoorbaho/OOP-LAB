@@ -1,0 +1,25 @@
+1)
+	In constructor 'Data::Data()':
+	
+	Thoughts:
+	This single error lead to report 73 error in program. First I thought it would be issue with accessing constructor with colons as I was first time defining function out of the class.
+
+	solution:
+	String should be double quoted.
+
+2)
+	[Error] type 'std::string {aka class std::basic_string<char>}' argument given to 'delete', expected pointer
+
+	Thoughts:
+	I think for destructor, it needs pointer of already created object to access exact memeory address of that object to perform deletion operation.
+
+	Solution: Use pointer and through pointer process deletion then it will delete the exact memory location.
+
+3)
+	[Error] 'emp1' was not declared in this scope
+	
+	My Thoughts:
+	As I altered code where objects were manually created, I used object array and initialized 5 objects at once. So automatically where emp1, emp2 and so on were used, they will be automatically undeclared objects.
+	
+	Solution:
+	In general situation, declare the variable emp1 with its data type but in my situation I just put for loop variable in emp1[i] to make it executable.
